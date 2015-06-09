@@ -1,14 +1,30 @@
 <!doctype html>
-<html lang="en">
-<head>
+<html lang="en" ng-app="myModule">
+<head >
   <meta charset="UTF-8">
-  <title>Angular Data</title>
+  <title>Angular Example</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/lib/angular/angular.min.js"></script>
+  <script src="js/lib/angular/angular-animate.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/controllers/schedule_controller.js"></script>
+  <link rel="stylesheet" href="css/nbc_widget_styles.css">
 </head>
 <body>
 <div class="page">
-  <main class="cf">
-  </main>
+  <main>Sumus tam adultis. Non est enim tibi nescio fingunt. Confusio esse cupio. Scio te debeo meae. At etiam, ut caveant ab his eu. In tuo positum, idem fecissem. Constitutione, quam molesta est mihi tres menses nescio quid de contractu fines nostros. Scis quare hoc facere. Lorem satis quaesitum. 
+
+Loquélæ. Brevis oratio. Hodie particeps tua perdideris. Quid sui nominis - Emilio? Emilio gradiens ad carcerem. Tulitque omnem pecuniam tuam in DEA tuus Lab. Vos got nihil. Quadratum unum. Et ego agnosco rem, nisi te scire elit. Cogito ... maybe vos possem socium ascendit. 
+
+Paenitet me quod tu me rogas? Oh, sic, qui stultus plastic continentis rogavi te ut emas. Vides non manducare acidum hydrofluoric per plastic. Erit autem dissolvere metalli petram, vitrum, tellus. Ita quod illic '. Quam de aliquo cum aliqua interdum, maybe? Aliquid viride, huh? Quam vos sunt etiam vivere? 
+
+Quinquaginta septem est - pars tua, triginta quinque millia. Est autem extra plus quindecim, tota tua est, quom meruisset. Fac nos fecit. SIC. Puto quia una res potest - venimus in cognitionem. Vide pretium in manibus. Sed finge iustum faciens quod qualibet septimana. SIC. Duis duas libras triginta quinque milia pondo. </main>
+  <aside ng-controller="FetchSchedule">Schedule
+    <div id="sched-wig-cont" class="schedule-rows" ng-repeat="prg in entries">
+      <div ng-repeat="prlist in prg">{{prg.pllisting$startTime | date:"MM/dd/yyyy @ h:mma"}} : {{prlist.pl$title}}
+      <div class="no-mobile">{{prlist.pl$description}} <span>{{prlist.plprogram$runtime / 60}} mins</span></div></div>
+    </div>
+  </aside>
 </div>
 </body>
 </html>

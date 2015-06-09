@@ -1,12 +1,12 @@
 {
-  "name": "AngularData",
+  "name": "Web Starter",
   "version": "0.0.1",
-  "description": "An application for taking attendance at meetups. Part of my Data Driven Web Applications with Angular.js course at Lynda.com",
+  "description": "Web Starter Package.  This was borrowed from Ray Villalobos (https://github.com/planetoftheweb/angulardata)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/planetoftheweb/angulardata.git"
+    "url": "https://github.com/jobygjoseph/webstart.git"
   },
-  "author": "Ray Villalobos",
+  "author": "Joby Joseph",
   "devDependencies": {
     "gulp": "^3.8.8",
     "gulp-util": "^2.2.20",
